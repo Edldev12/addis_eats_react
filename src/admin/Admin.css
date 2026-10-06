@@ -1,0 +1,757 @@
+/* =========================================================
+   ADMIN MENU / DISHES
+========================================================= */
+
+.admin-dishes {
+  width: 100%;
+}
+
+
+/* =========================================================
+   MENU HEADER
+========================================================= */
+
+.admin-dishes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-dishes-header h1 {
+  margin: 0 0 5px;
+  color: #166534;
+  font-size: 25px;
+}
+
+.admin-dishes-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ADD DISH BUTTON
+========================================================= */
+
+.admin-add-btn {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 7px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.admin-add-btn:hover {
+  background: #15803d;
+}
+
+
+/* =========================================================
+   DISH FORM
+========================================================= */
+
+.admin-form-panel {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.admin-form-panel h2 {
+  margin: 0 0 18px;
+  color: #166534;
+  font-size: 19px;
+}
+
+.admin-dish-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-form-group label {
+  margin-bottom: 6px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #374151;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.admin-form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.1);
+}
+
+.admin-form-full {
+  grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.admin-form-actions {
+  display: flex;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+
+.admin-save-btn,
+.admin-cancel-btn {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-save-btn {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.admin-save-btn:hover {
+  background: #15803d;
+}
+
+.admin-cancel-btn {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.admin-cancel-btn:hover {
+  background: #d1d5db;
+}
+
+
+/* =========================================================
+   SEARCH TOOLBAR
+========================================================= */
+
+.admin-dishes-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.admin-dishes-toolbar input {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.admin-dishes-toolbar input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.1);
+}
+
+
+/* =========================================================
+   DISH TABLE
+========================================================= */
+
+.admin-dishes-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.admin-dishes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dishes-table th,
+.admin-dishes-table td {
+  padding: 11px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-dishes-table th {
+  background: #f9fafb;
+  color: #374151;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-dishes-table td {
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.admin-dishes-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-dishes-table tbody tr:hover {
+  background: #fafafa;
+}
+
+
+/* =========================================================
+   DISH INFORMATION
+========================================================= */
+
+.admin-dish-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 170px;
+}
+
+.admin-dish-info img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.admin-dish-info span {
+  color: #111827;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   DISH STATUS
+========================================================= */
+
+.dish-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dish-status.enabled {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.dish-status.disabled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.admin-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.admin-edit-btn,
+.admin-delete-btn,
+.admin-enable-btn,
+.admin-disable-btn {
+  padding: 6px 9px;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* Edit */
+
+.admin-edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.admin-edit-btn:hover {
+  background: #bfdbfe;
+}
+
+
+/* Delete */
+
+.admin-delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.admin-delete-btn:hover {
+  background: #fecaca;
+}
+
+
+/* Enable */
+
+.admin-enable-btn {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.admin-enable-btn:hover {
+  background: #bbf7d0;
+}
+
+
+/* Disable */
+
+.admin-disable-btn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.admin-disable-btn:hover {
+  background: #fde68a;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.admin-empty {
+  padding: 25px;
+  color: #6b7280;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ========================================
+   ADMIN DISHES - DARK THEME
+======================================== */
+
+/* Page */
+
+body.dark-theme .admin-dashboard {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* Header */
+
+body.dark-theme .admin-header h1 {
+  color: #f9fafb;
+}
+
+body.dark-theme .admin-header p {
+  color: #9ca3af;
+}
+
+/* Add Dish Button */
+
+body.dark-theme .admin-add-btn {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+body.dark-theme .admin-add-btn:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+/* ========================================
+   FORM PANEL
+======================================== */
+
+body.dark-theme .admin-form-panel {
+  background: #1f2937;
+  border-color: #374151;
+  color: #f9fafb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .admin-form-panel h2 {
+  color: #f9fafb;
+}
+
+body.dark-theme .admin-form-group label {
+  color: #d1d5db;
+}
+
+/* Inputs */
+
+body.dark-theme .admin-dish-form input,
+body.dark-theme .admin-dish-form select,
+body.dark-theme .admin-dish-form textarea,
+body.dark-theme .admin-dishes-toolbar input {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+body.dark-theme .admin-dish-form input::placeholder,
+body.dark-theme .admin-dish-form textarea::placeholder,
+body.dark-theme .admin-dishes-toolbar input::placeholder {
+  color: #6b7280;
+}
+
+body.dark-theme .admin-dish-form input:focus,
+body.dark-theme .admin-dish-form select:focus,
+body.dark-theme .admin-dish-form textarea:focus,
+body.dark-theme .admin-dishes-toolbar input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+body.dark-theme .admin-dish-form select option {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* Form Buttons */
+
+body.dark-theme .admin-save-btn {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+body.dark-theme .admin-save-btn:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+body.dark-theme .admin-cancel-btn {
+  background: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+body.dark-theme .admin-cancel-btn:hover {
+  background: #4b5563;
+}
+
+/* ========================================
+   SEARCH
+======================================== */
+
+body.dark-theme .admin-dishes-toolbar {
+  background: transparent;
+}
+
+body.dark-theme .admin-dishes-toolbar input {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+/* ========================================
+   TABLE
+======================================== */
+
+body.dark-theme .admin-dishes-table-wrapper {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-theme .admin-dishes-table {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+/* Table Header */
+
+body.dark-theme .admin-dishes-table thead {
+  background: #374151;
+}
+
+body.dark-theme .admin-dishes-table th {
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+/* Table Rows */
+
+body.dark-theme .admin-dishes-table tbody tr {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-theme .admin-dishes-table tbody tr:hover {
+  background: #263445;
+}
+
+body.dark-theme .admin-dishes-table td {
+  color: #d1d5db;
+  border-color: #374151;
+}
+
+/* Dish Image */
+
+body.dark-theme .admin-dish-info img {
+  border-color: #4b5563;
+}
+
+/* Dish Name */
+
+body.dark-theme .admin-dish-info span {
+  color: #f9fafb;
+}
+
+/* ========================================
+   STATUS
+======================================== */
+
+body.dark-theme .dish-status.enabled {
+  background: #14532d;
+  color: #86efac;
+  border-color: #166534;
+}
+
+body.dark-theme .dish-status.disabled {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #991b1b;
+}
+
+/* ========================================
+   ACTION BUTTONS
+======================================== */
+
+body.dark-theme .admin-edit-btn {
+  background: #172554;
+  color: #93c5fd;
+  border-color: #1e40af;
+}
+
+body.dark-theme .admin-edit-btn:hover {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+body.dark-theme .admin-enable-btn {
+  background: #14532d;
+  color: #86efac;
+  border-color: #166534;
+}
+
+body.dark-theme .admin-enable-btn:hover {
+  background: #166534;
+  color: #ffffff;
+}
+
+body.dark-theme .admin-disable-btn {
+  background: #422006;
+  color: #fcd34d;
+  border-color: #854d0e;
+}
+
+body.dark-theme .admin-disable-btn:hover {
+  background: #854d0e;
+  color: #ffffff;
+}
+
+body.dark-theme .admin-delete-btn {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #991b1b;
+}
+
+body.dark-theme .admin-delete-btn:hover {
+  background: #991b1b;
+  color: #ffffff;
+}
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+body.dark-theme .admin-empty {
+  color: #9ca3af;
+}
+
+/* ========================================
+   ADMIN LOGIN - DARK THEME
+======================================== */
+
+body.dark-theme .admin-login-page {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* Login Card */
+
+body.dark-theme .admin-login-card {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #374151;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Icon */
+
+body.dark-theme .admin-login-icon {
+  background: #374151;
+}
+
+/* Title */
+
+body.dark-theme .admin-login-card h1 {
+  color: #f9fafb;
+}
+
+/* Description */
+
+body.dark-theme .admin-login-card>p {
+  color: #9ca3af;
+}
+
+/* Labels */
+
+body.dark-theme .admin-login-card label {
+  color: #d1d5db;
+}
+
+/* Inputs */
+
+body.dark-theme .admin-login-card input {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+body.dark-theme .admin-login-card input::placeholder {
+  color: #6b7280;
+}
+
+body.dark-theme .admin-login-card input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+/* Error */
+
+body.dark-theme .admin-error {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #991b1b;
+}
+
+/* Login Button */
+
+body.dark-theme .admin-login-card button {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+body.dark-theme .admin-login-card button:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+body.dark-theme .admin-login-card button:active {
+  background: #166534;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+  .admin-dishes-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-add-btn {
+    width: 100%;
+  }
+
+  .admin-dishes-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-dishes-toolbar input {
+    max-width: none;
+  }
+
+  .admin-dish-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form-full {
+    grid-column: auto;
+  }
+
+  .admin-form-actions {
+    grid-column: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .admin-form-panel {
+    padding: 15px;
+  }
+
+  .admin-dishes-header h1 {
+    font-size: 22px;
+  }
+
+  .admin-action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-edit-btn,
+  .admin-delete-btn,
+  .admin-enable-btn,
+  .admin-disable-btn {
+    width: 100%;
+  }
+}

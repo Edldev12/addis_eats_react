@@ -1,0 +1,98 @@
+/* ========================================
+   CATEGORY BAR
+======================================== */
+
+.category-bar {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+
+  flex-wrap: wrap;
+}
+
+
+/* ========================================
+   CATEGORY BUTTON
+======================================== */
+
+.category-bar button {
+  padding: 10px 20px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 25px;
+
+  background: #ffffff;
+  color: #374151;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.category-bar button:hover {
+  border-color: #16a34a;
+  color: #16a34a;
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   ACTIVE CATEGORY
+======================================== */
+
+.category-bar button.active {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+
+/* ========================================
+   KEYBOARD ACCESSIBILITY
+======================================== */
+
+.category-bar button:focus-visible {
+  outline: 3px solid rgba(22, 163, 74, 0.3);
+  outline-offset: 2px;
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+  .category-bar {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
+
+    padding-bottom: 8px;
+  }
+
+  .category-bar button {
+    flex-shrink: 0;
+  }
+}

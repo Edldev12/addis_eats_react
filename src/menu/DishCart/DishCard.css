@@ -1,0 +1,247 @@
+/* ========================================
+   DISH CARD
+======================================== */
+
+.dish-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.dish-image-link {
+  display: block;
+  position: relative;
+}
+
+.dish-image {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* ========================================
+   FAVORITE BUTTON
+======================================== */
+
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #ef4444;
+
+  font-size: 24px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+  background: #fef2f2;
+}
+
+.favorite-btn.active {
+  color: #ef4444;
+}
+
+
+/* ========================================
+   INFORMATION
+======================================== */
+
+.dish-info {
+  padding: 18px;
+}
+
+.dish-category {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dish-name {
+  margin: 7px 0;
+  color: #111827;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.dish-rating {
+  margin: 5px 0 10px;
+
+  color: #f59e0b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   DESCRIPTION + SEE MORE
+======================================== */
+
+.dish-description-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-bottom: 18px;
+}
+
+.dish-description {
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-dish-link {
+  flex-shrink: 0;
+
+  color: #16803c;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.view-dish-link:hover {
+  color: #126b32;
+  text-decoration: underline;
+}
+
+
+/* ========================================
+   BOTTOM
+======================================== */
+
+.dish-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.dish-price {
+  color: #166534;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   ADD TO CART
+======================================== */
+
+.add-cart-btn {
+  border: none;
+  border-radius: 7px;
+
+  padding: 9px 14px;
+
+  background: #16a34a;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: background 0.2s ease;
+}
+
+.add-cart-btn:hover {
+  background: #15803d;
+}
+
+
+/* ========================================
+   KEYBOARD ACCESSIBILITY
+======================================== */
+
+.dish-card button:focus-visible,
+.dish-card a:focus-visible {
+  outline: 3px solid #16a34a;
+  outline-offset: 3px;
+}
+
+.favorite-btn:focus-visible {
+  border-radius: 50%;
+}
+
+.add-cart-btn:focus-visible,
+.see-more:focus-visible {
+  outline: 3px solid #16a34a;
+  outline-offset: 3px;
+}
+
+.dish-image-link {
+  position: relative;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+  .dish-image {
+    height: 200px;
+  }
+
+  .dish-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .add-cart-btn {
+    width: 100%;
+  }
+
+  .favorite-btn {
+    width: 36px;
+    height: 36px;
+
+    font-size: 21px;
+  }
+}

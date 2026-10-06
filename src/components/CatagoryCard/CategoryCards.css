@@ -1,0 +1,260 @@
+/* =========================================================
+   FOOD CATEGORIES
+========================================================= */
+
+.Categories-Card {
+  width: 100%;
+  padding: 70px 20px;
+  background: white;
+}
+
+.Categories-Card-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Categories-Card-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Categories-Card-header h2 {
+  margin: 0 0 10px;
+  color: #232d38;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.Categories-Card-header p {
+  margin: 0;
+  color: #5d5f62;
+  font-size: 16px;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.Categories-Card-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.food-category-card {
+  min-width: 0;
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 24px;
+
+  background: #fafdfc;
+  border: 1px solid #3c5137;
+  border-radius: 18px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.food-category-card:hover {
+  transform: translateY(-5px);
+  border-color: #4b5563;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.food-category-icon {
+  width: 60px;
+  height: 60px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #babfc7;
+  border-radius: 16px;
+
+  font-size: 32px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.food-category-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.food-category-content h3 {
+  margin: 0 0 8px;
+
+  color: #f9fafb;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.food-category-content p {
+  margin: 0;
+
+  color: #9ca3af;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.food-category-arrow {
+  flex-shrink: 0;
+
+  color: #2cd342;
+
+  font-size: 22px;
+
+  transition: transform 0.2s ease;
+}
+
+.food-category-card:hover .food-category-arrow {
+  transform: translateX(5px);
+}
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .Categories-Card-grid {
+    gap: 18px;
+  }
+
+  .food-category-card {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .food-category-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 28px;
+  }
+
+  .food-category-content h3 {
+    font-size: 17px;
+  }
+
+  .food-category-content p {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .Categories-Card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .Categories-Card {
+    padding: 50px 16px;
+  }
+
+  .Categories-Card-header {
+    margin-bottom: 30px;
+  }
+
+  .Categories-Card-header h2 {
+    font-size: 26px;
+  }
+
+  .Categories-Card-header p {
+    font-size: 14px;
+  }
+
+  .Categories-Card-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .food-category-card {
+    min-height: 125px;
+  }
+}
+
+/* ========================================================= DARK THEME ========================================================= */
+body.dark-theme .Categories-Card {
+  background: #111827;
+}
+
+body.dark-theme .Categories-Card-header h2 {
+  color: #f9fafb;
+}
+
+body.dark-theme .Categories-Card-header p {
+  color: #9ca3af;
+}
+
+/* ========================================================= DARK CARD ========================================================= */
+body.dark-theme .food-category-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-theme .food-category-card:hover {
+  background: #263244;
+  border-color: #16a34a;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================================= DARK ICON ========================================================= */
+body.dark-theme .food-category-icon {
+  background: #374151;
+}
+
+/* ========================================================= DARK CONTENT ========================================================= */
+body.dark-theme .food-category-content h3 {
+  color: #f9fafb;
+}
+
+body.dark-theme .food-category-content p {
+  color: #9ca3af;
+}
+
+/* ========================================================= DARK ARROW ========================================================= */
+body.dark-theme .food-category-arrow {
+  color: #22c55e;
+}

@@ -1,0 +1,373 @@
+.confirmation-page {
+  min-height: 80vh;
+  padding: 60px 20px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 45px 35px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.confirmation-label {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.confirmation-card h1 {
+  margin: 10px 0;
+  color: #111827;
+  font-size: 32px;
+}
+
+.confirmation-message {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.confirmation-details {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.confirmation-row:last-child {
+  border-bottom: none;
+}
+
+.confirmation-row span {
+  color: #6b7280;
+}
+
+.confirmation-row strong {
+  color: #111827;
+  text-align: right;
+}
+
+.confirmation-row .pending {
+  color: #d97706;
+}
+
+.confirmation-row.total {
+  margin-top: 5px;
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.confirmation-row.total strong {
+  color: #166534;
+}
+
+.confirmation-instructions {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  color: #374151;
+  text-align: left;
+}
+
+.confirmation-instructions strong {
+  color: #166534;
+}
+
+.confirmation-instructions p {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.confirmation-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #16a34a;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.confirmation-btn:hover {
+  background: #15803d;
+}
+
+.confirmation-btn.secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.confirmation-btn.secondary:hover {
+  background: #d1d5db;
+}
+
+/* ========================================
+   ORDER CONFIRMATION — DARK THEME
+======================================== */
+
+/* ========================================
+   PAGE
+======================================== */
+
+body.dark-theme .confirmation-page {
+  background: #111827;
+  color: #f9fafb;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ========================================
+   MAIN CARD
+======================================== */
+
+body.dark-theme .confirmation-card {
+  background: #1f2937;
+  color: #f9fafb;
+  border: 1px solid #374151;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ========================================
+   SUCCESS ICON
+======================================== */
+
+body.dark-theme .confirmation-icon {
+  background: #14532d;
+  color: #86efac;
+  border-color: #166534;
+}
+
+/* ========================================
+   LABEL
+======================================== */
+
+body.dark-theme .confirmation-label {
+  color: #86efac;
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+body.dark-theme .confirmation-card h1 {
+  color: #f9fafb;
+}
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+body.dark-theme .confirmation-message {
+  color: #d1d5db;
+}
+
+/* ========================================
+   ORDER DETAILS
+======================================== */
+
+body.dark-theme .confirmation-details {
+  background: #111827;
+  border: 1px solid #374151;
+}
+
+/* ========================================
+   DETAIL ROWS
+======================================== */
+
+body.dark-theme .confirmation-row {
+  border-color: #374151;
+}
+
+body.dark-theme .confirmation-row span {
+  color: #9ca3af;
+}
+
+body.dark-theme .confirmation-row strong {
+  color: #f9fafb;
+}
+
+/* ========================================
+   STATUS
+======================================== */
+
+body.dark-theme .confirmation-status {
+  background: #14532d;
+  color: #86efac;
+  border: 1px solid #166534;
+}
+
+/* Pending */
+body.dark-theme .confirmation-status.pending {
+  background: #422006;
+  color: #fcd34d;
+  border-color: #854d0e;
+}
+
+/* Preparing */
+body.dark-theme .confirmation-status.preparing {
+  background: #172554;
+  color: #93c5fd;
+  border-color: #1e40af;
+}
+
+/* Out for delivery */
+body.dark-theme .confirmation-status.out-for-delivery {
+  background: #312e81;
+  color: #c4b5fd;
+  border-color: #4338ca;
+}
+
+/* Delivered */
+body.dark-theme .confirmation-status.delivered {
+  background: #14532d;
+  color: #86efac;
+  border-color: #166534;
+}
+
+/* Cancelled */
+body.dark-theme .confirmation-status.cancelled {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #991b1b;
+}
+
+/* ========================================
+   TOTAL
+======================================== */
+
+body.dark-theme .confirmation-row.total {
+  border-top: 1px solid #374151;
+}
+
+body.dark-theme .confirmation-row.total span {
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+body.dark-theme .confirmation-row.total strong {
+  color: #86efac;
+  font-size: 1.25rem;
+}
+
+/* ========================================
+   SPECIAL INSTRUCTIONS
+======================================== */
+
+body.dark-theme .confirmation-instructions {
+  background: #111827;
+  border: 1px solid #374151;
+  color: #f9fafb;
+}
+
+body.dark-theme .confirmation-instructions strong {
+  color: #f9fafb;
+}
+
+body.dark-theme .confirmation-instructions p {
+  color: #d1d5db;
+}
+
+/* ========================================
+   ACTION BUTTONS
+======================================== */
+
+body.dark-theme .confirmation-actions {
+  border-color: #374151;
+}
+
+body.dark-theme .confirmation-btn {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+body.dark-theme .confirmation-btn:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+/* View Orders button */
+body.dark-theme .confirmation-btn.secondary {
+  background: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+body.dark-theme .confirmation-btn.secondary:hover {
+  background: #4b5563;
+}
+
+@media (max-width: 600px) {
+  .confirmation-page {
+    padding: 30px 15px;
+  }
+
+  .confirmation-card {
+    padding: 35px 20px;
+  }
+
+  .confirmation-card h1 {
+    font-size: 25px;
+  }
+
+  .confirmation-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .confirmation-row strong {
+    text-align: left;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
+
+  .confirmation-btn {
+    width: 100%;
+  }
+}

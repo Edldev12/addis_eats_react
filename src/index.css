@@ -1,0 +1,244 @@
+/* =========================================================
+   THEME VARIABLES
+========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --input: #ffffff;
+}
+
+body.dark-theme {
+  --bg: #111827;
+  --card: #1f2937;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --border: #374151;
+  --input: #111827;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* =========================================================
+   GLOBAL DARK THEME
+========================================================= */
+
+body.dark-theme {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* =========================================================
+   COMMON CARDS / PANELS
+========================================================= */
+
+body.dark-theme .card,
+body.dark-theme .panel,
+body.dark-theme .section,
+body.dark-theme .container-card,
+body.dark-theme .empty-card,
+body.dark-theme .special-card,
+body.dark-theme .dish-card,
+body.dark-theme .favorite-card,
+body.dark-theme .cart-item,
+body.dark-theme .order-card,
+body.dark-theme .status-row {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+/* =========================================================
+   EMPTY CARD
+========================================================= */
+
+.empty-card {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+/* =========================================================
+   PAGES
+========================================================= */
+
+body.dark-theme .menu-page,
+body.dark-theme .cart-page,
+body.dark-theme .favorites-page,
+body.dark-theme .orders-page,
+body.dark-theme .dish-page,
+body.dark-theme .checkout-page,
+body.dark-theme .order-confirmation-page {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme .dish-name {
+  color: #f9fafb;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+body.dark-theme p,
+body.dark-theme .dish-description {
+  color: #d1d5db;
+}
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+  color: #6b7280;
+}
+
+body.dark-theme input:focus,
+body.dark-theme textarea:focus,
+body.dark-theme select:focus {
+  border-color: #16a34a;
+  outline: none;
+}
+
+/* =========================================================
+   CATEGORY BUTTONS
+========================================================= */
+
+body.dark-theme .category-bar button {
+  background: #1f2937;
+  border-color: #374151;
+  color: #f9fafb;
+}
+
+body.dark-theme .category-bar button:hover {
+  background: #374151;
+}
+
+body.dark-theme .category-bar button.active {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+/* =========================================================
+   ORDER STATUS
+========================================================= */
+
+body.dark-theme .status-row {
+  background: #1f2937;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+body.dark-theme .status-name {
+  color: #f9fafb;
+}
+
+body.dark-theme .status-row strong {
+  background: #374151;
+  color: #f9fafb;
+}
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+body.dark-theme table {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark-theme th {
+  background: #374151;
+  color: #f9fafb;
+}
+
+body.dark-theme td {
+  background: #1f2937;
+  color: #d1d5db;
+  border-color: #374151;
+}
+
+/* =========================================================
+   THEME TOGGLE
+========================================================= */
+
+body.dark-theme .theme-toggle {
+  background: #374151;
+  color: #ffffff;
+  border-color: #4b5563;
+}
+
+body.dark-theme .theme-toggle:hover {
+  background: #16a34a;
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+body.dark-theme a {
+  color: #86efac;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+body.dark-theme button {
+  color: inherit;
+}

@@ -1,0 +1,619 @@
+{
+  "categories": [
+    "All",
+    "Ethiopian",
+    "Pizza",
+    "Burgers",
+    "Drinks"
+  ],
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Doro Wot",
+      "category": "Ethiopian",
+      "price": 280,
+      "description": "Spicy Ethiopian chicken stew served with injera.",
+      "ingredients": [
+        "Chicken",
+        "Berbere",
+        "Onion",
+        "Garlic",
+        "Ginger",
+        "Ethiopian butter",
+        "Egg",
+        "Spices",
+        "Injera"
+      ],
+      "image": "/images/Doro-wet.png",
+      "rating": 4.9,
+      "reviews": 245,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Kitfo",
+      "category": "Ethiopian",
+      "price": 350,
+      "description": "Seasoned minced beef prepared with Ethiopian butter and spices.",
+      "ingredients": [
+        "Minced beef",
+        "Ethiopian butter",
+        "Mitmita",
+        "Cardamom",
+        "Spices",
+        "Ayib",
+        "Gomen"
+      ],
+      "image": "/images/kitfo.png",
+      "rating": 4.9,
+      "reviews": 189,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Beef Burger",
+      "category": "Burgers",
+      "price": 250,
+      "description": "Juicy beef burger with fresh vegetables and special sauce.",
+      "ingredients": [
+        "Beef patty",
+        "Burger bun",
+        "Lettuce",
+        "Tomato",
+        "Onion",
+        "Cheese",
+        "Special sauce"
+      ],
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+      "rating": 4.6,
+      "reviews": 136,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "price": 320,
+      "description": "Classic pizza with tomato sauce and mozzarella cheese.",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Mozzarella cheese",
+        "Fresh basil",
+        "Olive oil",
+        "Italian herbs"
+      ],
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
+      "rating": 4.7,
+      "reviews": 154,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Chicken Pasta",
+      "category": "Ethiopian",
+      "price": 280,
+      "description": "Creamy pasta served with tender chicken.",
+      "ingredients": [
+        "Pasta",
+        "Chicken",
+        "Cream",
+        "Garlic",
+        "Onion",
+        "Parmesan cheese",
+        "Black pepper",
+        "Italian herbs"
+      ],
+      "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb",
+      "rating": 4.7,
+      "reviews": 109,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 6,
+      "name": "Fried Chicken",
+      "category": "Ethiopian",
+      "price": 300,
+      "description": "Crispy fried chicken served with fries and salad.",
+      "ingredients": [
+        "Chicken",
+        "Flour",
+        "Egg",
+        "Seasoning",
+        "Black pepper",
+        "French fries",
+        "Lettuce",
+        "Tomato"
+      ],
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec",
+      "rating": 4.6,
+      "reviews": 178,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 7,
+      "name": "Mango Juice",
+      "category": "Drinks",
+      "price": 100,
+      "description": "Freshly blended mango juice.",
+      "ingredients": [
+        "Fresh mango",
+        "Water",
+        "Honey",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1546173159-315724a31696",
+      "rating": 4.8,
+      "reviews": 156,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 8,
+      "name": "Avocado Juice",
+      "category": "Drinks",
+      "price": 120,
+      "description": "Creamy fresh avocado juice blended with milk and honey.",
+      "ingredients": [
+        "Avocado",
+        "Milk",
+        "Honey",
+        "Water",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1553177595-4de2bb0842b9",
+      "rating": 4.9,
+      "reviews": 189,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 9,
+      "name": "Mixed Special Juice",
+      "category": "Drinks",
+      "price": 150,
+      "description": "A delicious combination of fresh tropical fruits.",
+      "ingredients": [
+        "Mango",
+        "Pineapple",
+        "Papaya",
+        "Banana",
+        "Orange",
+        "Honey",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e",
+      "rating": 5.0,
+      "reviews": 267,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 10,
+      "name": "Chechebsa",
+      "category": "Ethiopian",
+      "price": 150,
+      "description": "Traditional Ethiopian breakfast made with torn flatbread, butter, honey and spices.",
+      "ingredients": [
+        "Flatbread",
+        "Ethiopian butter",
+        "Honey",
+        "Berbere",
+        "Spices"
+      ],
+      "image": "/images/checebsa.png",
+      "rating": 4.7,
+      "reviews": 98,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 11,
+      "name": "Fasting Breakfast",
+      "category": "Ethiopian",
+      "price": 110,
+      "description": "Healthy vegetarian breakfast served with fresh vegetables and bread.",
+      "ingredients": [
+        "Bread",
+        "Tomato",
+        "Lettuce",
+        "Avocado",
+        "Onion",
+        "Fresh vegetables",
+        "Spices"
+      ],
+      "image": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d",
+      "rating": 4.5,
+      "reviews": 76,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 12,
+      "name": "Special Firfir",
+      "category": "Ethiopian",
+      "price": 130,
+      "description": "Shredded injera mixed with berbere, butter, onion and Ethiopian spices.",
+      "ingredients": [
+        "Injera",
+        "Berbere",
+        "Ethiopian butter",
+        "Onion",
+        "Garlic",
+        "Ethiopian spices"
+      ],
+      "image": "/images/speshal-firfir.png",
+      "rating": 4.8,
+      "reviews": 124,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 13,
+      "name": "Shiro",
+      "category": "Ethiopian",
+      "price": 160,
+      "description": "Smooth Ethiopian chickpea stew prepared with berbere and aromatic spices.",
+      "ingredients": [
+        "Chickpea flour",
+        "Berbere",
+        "Onion",
+        "Garlic",
+        "Tomato",
+        "Ethiopian butter",
+        "Spices"
+      ],
+      "image": "/images/shiro.png",
+      "rating": 4.7,
+      "reviews": 143,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 14,
+      "name": "Beyaynetu",
+      "category": "Ethiopian",
+      "price": 220,
+      "description": "A colorful combination of Ethiopian vegetarian dishes served with injera.",
+      "ingredients": [
+        "Injera",
+        "Shiro",
+        "Gomen",
+        "Misir Wot",
+        "Tikil Gomen",
+        "Salad",
+        "Vegetables"
+      ],
+      "image": "/images/beyaynet.png",
+      "rating": 4.8,
+      "reviews": 211,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 15,
+      "name": "Tibs",
+      "category": "Ethiopian",
+      "price": 300,
+      "description": "Tender pieces of beef sautéed with onions, peppers and Ethiopian spices.",
+      "ingredients": [
+        "Beef",
+        "Onion",
+        "Green pepper",
+        "Tomato",
+        "Rosemary",
+        "Ethiopian butter",
+        "Spices"
+      ],
+      "image": "/images/tibs.png",
+      "rating": 4.8,
+      "reviews": 167,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 16,
+      "name": "Chicken Burger",
+      "category": "Burgers",
+      "price": 220,
+      "description": "Crispy chicken burger with lettuce, tomato and special sauce.",
+      "ingredients": [
+        "Chicken",
+        "Burger bun",
+        "Lettuce",
+        "Tomato",
+        "Onion",
+        "Special sauce",
+        "Seasoning"
+      ],
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+      "rating": 4.5,
+      "reviews": 112,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 17,
+      "name": "Chicken Pizza",
+      "category": "Pizza",
+      "price": 380,
+      "description": "Pizza topped with seasoned chicken, vegetables and melted cheese.",
+      "ingredients": [
+        "Pizza dough",
+        "Chicken",
+        "Tomato sauce",
+        "Mozzarella cheese",
+        "Onion",
+        "Bell pepper",
+        "Italian herbs"
+      ],
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38",
+      "rating": 4.6,
+      "reviews": 121,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 18,
+      "name": "French Fries",
+      "category": "Ethiopian",
+      "price": 120,
+      "description": "Crispy golden French fries served with a special dipping sauce.",
+      "ingredients": [
+        "Potatoes",
+        "Vegetable oil",
+        "Salt",
+        "Special dipping sauce"
+      ],
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877",
+      "rating": 4.5,
+      "reviews": 145,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 19,
+      "name": "Chicken Sandwich",
+      "category": "Ethiopian",
+      "price": 200,
+      "description": "Grilled chicken sandwich with fresh vegetables and creamy sauce.",
+      "ingredients": [
+        "Chicken",
+        "Bread",
+        "Lettuce",
+        "Tomato",
+        "Onion",
+        "Creamy sauce"
+      ],
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+      "rating": 4.6,
+      "reviews": 103,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 20,
+      "name": "Vegetable Pasta",
+      "category": "Ethiopian",
+      "price": 230,
+      "description": "Fresh pasta mixed with colorful vegetables and a flavorful tomato sauce.",
+      "ingredients": [
+        "Pasta",
+        "Tomato",
+        "Carrot",
+        "Bell pepper",
+        "Onion",
+        "Garlic",
+        "Tomato sauce",
+        "Italian herbs"
+      ],
+      "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+      "rating": 4.5,
+      "reviews": 87,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 21,
+      "name": "Beef Steak",
+      "category": "Ethiopian",
+      "price": 450,
+      "description": "Grilled beef steak served with vegetables and roasted potatoes.",
+      "ingredients": [
+        "Beef steak",
+        "Potatoes",
+        "Carrot",
+        "Green beans",
+        "Garlic",
+        "Black pepper",
+        "Herbs"
+      ],
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d",
+      "rating": 4.9,
+      "reviews": 203,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 22,
+      "name": "Rice with Chicken",
+      "category": "Ethiopian",
+      "price": 280,
+      "description": "Seasoned rice served with grilled chicken and fresh vegetables.",
+      "ingredients": [
+        "Rice",
+        "Chicken",
+        "Carrot",
+        "Green peas",
+        "Onion",
+        "Garlic",
+        "Spices"
+      ],
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+      "rating": 4.7,
+      "reviews": 132,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 23,
+      "name": "Fresh Orange Juice",
+      "category": "Drinks",
+      "price": 90,
+      "description": "Freshly squeezed orange juice served chilled.",
+      "ingredients": [
+        "Fresh oranges",
+        "Water",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423",
+      "rating": 4.7,
+      "reviews": 134,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 24,
+      "name": "Papaya Juice",
+      "category": "Drinks",
+      "price": 100,
+      "description": "Refreshing natural papaya juice prepared fresh to order.",
+      "ingredients": [
+        "Fresh papaya",
+        "Water",
+        "Honey",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1546549032-9571cd6b27df",
+      "rating": 4.6,
+      "reviews": 91,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 25,
+      "name": "Banana Smoothie",
+      "category": "Drinks",
+      "price": 120,
+      "description": "Creamy banana smoothie blended with milk and honey.",
+      "ingredients": [
+        "Banana",
+        "Milk",
+        "Honey",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767",
+      "rating": 4.8,
+      "reviews": 118,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 26,
+      "name": "Strawberry Smoothie",
+      "category": "Drinks",
+      "price": 140,
+      "description": "Fresh strawberry smoothie blended with milk and honey.",
+      "ingredients": [
+        "Strawberries",
+        "Milk",
+        "Honey",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888",
+      "rating": 4.8,
+      "reviews": 156,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 27,
+      "name": "Lemon Mint Juice",
+      "category": "Drinks",
+      "price": 90,
+      "description": "Refreshing lemon and mint drink served chilled.",
+      "ingredients": [
+        "Fresh lemon",
+        "Mint leaves",
+        "Water",
+        "Honey",
+        "Ice"
+      ],
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+      "rating": 4.6,
+      "reviews": 84,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 28,
+      "name": "Avocado Sandwich",
+      "category": "Ethiopian",
+      "price": 180,
+      "description": "Fresh avocado sandwich with tomato, lettuce and a creamy dressing.",
+      "ingredients": [
+        "Avocado",
+        "Bread",
+        "Tomato",
+        "Lettuce",
+        "Onion",
+        "Creamy dressing"
+      ],
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+      "rating": 4.6,
+      "reviews": 92,
+      "enabled": true,
+      "featured": false
+    },
+    {
+      "id": 29,
+      "name": "Club Sandwich",
+      "category": "Ethiopian",
+      "price": 240,
+      "description": "Triple-layer sandwich with chicken, lettuce, tomato and cheese.",
+      "ingredients": [
+        "Bread",
+        "Chicken",
+        "Lettuce",
+        "Tomato",
+        "Cheese",
+        "Mayonnaise",
+        "Egg"
+      ],
+      "image": "/images/club-sandweh.png",
+      "rating": 4.7,
+      "reviews": 128,
+      "enabled": true,
+      "featured": true
+    },
+    {
+      "id": 30,
+      "name": "Mixed Grill",
+      "category": "Ethiopian",
+      "price": 480,
+      "description": "A generous plate of grilled meat, vegetables and crispy potatoes.",
+      "ingredients": [
+        "Beef",
+        "Chicken",
+        "Lamb",
+        "Potatoes",
+        "Onion",
+        "Bell pepper",
+        "Tomato",
+        "Herbs",
+        "Spices"
+      ],
+      "image": "https://images.unsplash.com/photo-1558030006-450675393462",
+      "rating": 4.9,
+      "reviews": 178,
+      "enabled": true,
+      "featured": true
+    }
+  ]
+}

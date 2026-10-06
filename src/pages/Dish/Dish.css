@@ -1,0 +1,421 @@
+/* ========================================
+   DISH DETAILS PAGE
+======================================== */
+
+.dish-page {
+  min-height: 80vh;
+  padding: 50px 20px;
+  background: #f8fafc;
+}
+
+.dish-details {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.dish-details-image {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.dish-details-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.dish-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dish-details-content .dish-category {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #e8f5e9;
+  color: #16803c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dish-details-content h1 {
+  margin: 0 0 15px;
+  color: #111827;
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.dish-rating {
+  margin: 0 0 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.dish-details-content .dish-description {
+  margin: 0 0 25px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.dish-details-content h2 {
+  margin: 0 0 25px;
+  color: #16803c;
+  font-size: 30px;
+}
+
+/* ========================================
+   ADD TO CART
+======================================== */
+
+.dish-details-content .add-cart-btn {
+  border: none;
+  padding: 13px 28px;
+  border-radius: 10px;
+  background: #16803c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dish-details-content .add-cart-btn:hover {
+  background: #126b32;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   BACK TO MENU
+======================================== */
+
+.back-menu-btn {
+  display: inline-block;
+  margin-top: 18px;
+  color: #16803c;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-menu-btn:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   LOADING / ERROR
+======================================== */
+
+.dish-page>p,
+.dish-page>h2 {
+  max-width: 1100px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.dish-page>h2 {
+  color: #dc2626;
+}
+
+.dish-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.view-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 1px solid #16803c;
+  border-radius: 8px;
+  color: #16803c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.view-cart-btn:hover {
+  background: #16803c;
+  color: white;
+}
+
+.favorite-detail-btn {
+  border: 1px solid #fecaca;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.favorite-detail-btn:hover {
+  background: #fef2f2;
+}
+
+.favorite-detail-btn.active {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ========================================
+   DISH DETAILS — DARK THEME
+======================================== */
+
+/* ========================================
+   PAGE
+======================================== */
+
+body.dark-theme .dish-page {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* ========================================
+   DISH DETAILS CARD
+======================================== */
+
+body.dark-theme .dish-details {
+  background: #1f2937;
+  border-color: #374151;
+  color: #f9fafb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   IMAGE
+======================================== */
+
+body.dark-theme .dish-details-image {
+  background: #111827;
+}
+
+body.dark-theme .dish-details-image img {
+  border-color: #374151;
+}
+
+/* ========================================
+   CATEGORY
+======================================== */
+
+body.dark-theme .dish-category {
+  color: #86efac;
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+body.dark-theme .dish-details-content h1 {
+  color: #f9fafb;
+}
+
+/* ========================================
+   RATING
+======================================== */
+
+body.dark-theme .dish-rating {
+  color: #fbbf24;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+body.dark-theme .dish-description {
+  color: #d1d5db;
+}
+
+/* ========================================
+   INGREDIENTS
+======================================== */
+
+body.dark-theme .dish-ingredients {
+  background: #111827;
+  border-color: #374151;
+}
+
+body.dark-theme .dish-ingredients h2 {
+  color: #f9fafb;
+}
+
+body.dark-theme .dish-ingredients ul {
+  color: #d1d5db;
+}
+
+body.dark-theme .dish-ingredients li {
+  color: #d1d5db;
+}
+
+body.dark-theme .dish-ingredients li::marker {
+  color: #86efac;
+}
+
+body.dark-theme .dish-ingredients p {
+  color: #9ca3af;
+}
+
+/* ========================================
+   PRICE
+======================================== */
+
+body.dark-theme .dish-detail-price {
+  color: #86efac;
+}
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+body.dark-theme .dish-detail-actions {
+  border-color: #374151;
+}
+
+/* Add to Cart */
+body.dark-theme .add-cart-btn {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}
+
+body.dark-theme .add-cart-btn:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+/* Favorite */
+body.dark-theme .favorite-detail-btn {
+  background: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+body.dark-theme .favorite-detail-btn:hover {
+  background: #4b5563;
+}
+
+body.dark-theme .favorite-detail-btn.active {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #991b1b;
+}
+
+/* View Cart */
+body.dark-theme .view-cart-btn {
+  background: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+body.dark-theme .view-cart-btn:hover {
+  background: #4b5563;
+}
+
+/* ========================================
+   BACK TO MENU
+======================================== */
+
+body.dark-theme .back-menu-btn {
+  color: #86efac;
+}
+
+body.dark-theme .back-menu-btn:hover {
+  color: #4ade80;
+}
+
+/* ========================================
+   LOADING
+======================================== */
+
+body.dark-theme .dish-page>p {
+  color: #9ca3af;
+}
+
+/* ========================================
+   ERROR
+======================================== */
+
+body.dark-theme .dish-page h2 {
+  color: #f9fafb;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .dish-page {
+    padding: 30px 15px;
+  }
+
+  .dish-details {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .dish-details-image {
+    height: 300px;
+  }
+
+  .dish-details-content h1 {
+    font-size: 32px;
+  }
+
+  .dish-details-content h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dish-details {
+    border-radius: 14px;
+    padding: 15px;
+  }
+
+  .dish-details-image {
+    height: 240px;
+  }
+
+  .dish-details-content h1 {
+    font-size: 28px;
+  }
+
+  .dish-details-content .dish-description {
+    font-size: 15px;
+  }
+
+  .dish-details-content h2 {
+    font-size: 24px;
+  }
+
+  .dish-details-content .add-cart-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,321 @@
+/* ========================================
+   CUSTOMER SIGN IN PAGE
+======================================== */
+
+.customer-signin-page {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background: #f8fafc;
+}
+
+/* ========================================
+   SIGN IN CARD
+======================================== */
+
+.customer-signin {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.customer-signin h1 {
+  margin-bottom: 10px;
+
+  color: #166534;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.customer-signin>p {
+  margin-bottom: 28px;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ========================================
+   FORM
+======================================== */
+
+.customer-signin form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ========================================
+   LABEL
+======================================== */
+
+.customer-signin label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ========================================
+   INPUT
+======================================== */
+
+.customer-signin input {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #1f2937;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.customer-signin input::placeholder {
+  color: #9ca3af;
+}
+
+.customer-signin input:focus {
+  border-color: #16a34a;
+
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+/* ========================================
+   ERROR
+======================================== */
+
+.customer-signin-error {
+  margin: 0 !important;
+  padding: 10px 12px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+
+  color: #dc2626 !important;
+
+  font-size: 14px !important;
+  text-align: left !important;
+}
+
+/* ========================================
+   SIGN IN BUTTON
+======================================== */
+
+.customer-signin button[type="submit"] {
+  width: 100%;
+
+  margin-top: 5px;
+
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #16a34a;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.customer-signin button[type="submit"]:hover {
+  background: #15803d;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 15px rgba(22, 163, 74, 0.25);
+}
+
+.customer-signin button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   CUSTOMER SIGN IN — DARK THEME
+======================================== */
+
+/* ========================================
+   PAGE
+======================================== */
+
+body.dark-theme .customer-signin-page {
+  background: #111827;
+  color: #f9fafb;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ========================================
+   SIGN IN CARD
+======================================== */
+
+body.dark-theme .customer-signin {
+  background: #1f2937;
+  color: #f9fafb;
+  border: 1px solid #374151;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+body.dark-theme .customer-signin h1 {
+  color: #f9fafb;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+body.dark-theme .customer-signin>p {
+  color: #9ca3af;
+}
+
+/* ========================================
+   FORM
+======================================== */
+
+body.dark-theme .customer-signin form {
+  color: #f9fafb;
+}
+
+/* ========================================
+   LABELS
+======================================== */
+
+body.dark-theme .customer-signin label {
+  color: #d1d5db;
+}
+
+/* ========================================
+   INPUTS
+======================================== */
+
+body.dark-theme .customer-signin input {
+  background: #111827;
+  color: #f9fafb;
+  border: 1px solid #374151;
+}
+
+body.dark-theme .customer-signin input::placeholder {
+  color: #6b7280;
+}
+
+/* Input focus */
+
+body.dark-theme .customer-signin input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow:
+    0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+/* ========================================
+   ERROR
+======================================== */
+
+body.dark-theme .customer-signin-error {
+  background: #450a0a;
+  color: #fca5a5;
+  border: 1px solid #991b1b;
+}
+
+/* ========================================
+   SIGN IN BUTTON
+======================================== */
+
+body.dark-theme .customer-signin button {
+  background: #16a34a;
+  color: #ffffff;
+  border: 1px solid #16a34a;
+}
+
+body.dark-theme .customer-signin button:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+/* ========================================
+   DISABLED BUTTON
+======================================== */
+
+body.dark-theme .customer-signin button:disabled {
+  background: #374151;
+  border-color: #4b5563;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+  .customer-signin-page {
+    padding: 25px 15px;
+  }
+
+  .customer-signin {
+    padding: 25px 20px;
+
+    border-radius: 12px;
+  }
+
+  .customer-signin h1 {
+    font-size: 24px;
+  }
+}
